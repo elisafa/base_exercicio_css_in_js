@@ -1,4 +1,5 @@
 import { FormEvent, useState } from 'react'
+import { Formulario } from './styles'
 
 import styles from './FormVagas.module.css'
 
@@ -15,7 +16,7 @@ const FormVagas = ({ aoPesquisar }: Props) => {
   }
 
   return (
-    <form className={styles.form} onSubmit={aoEnviarForm}>
+    <Formulario onSubmit={aoEnviarForm}>
       <input
         className={styles.campo}
         placeholder="Front-end, fullstack, node, design"
@@ -25,7 +26,7 @@ const FormVagas = ({ aoPesquisar }: Props) => {
       <button className={styles.btnPesquisar} type="submit">
         Pesquisar
       </button>
-    </form>
+    </Formulario>
   )
 }
 export default FormVagas
