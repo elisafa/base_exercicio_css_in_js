@@ -1,12 +1,13 @@
 import { FormularioHero, HeroTitulo } from './styles'
+import { ContainerDiv } from '../Container/styles'
 
 const Hero = () => (
   <FormularioHero>
-    <div className="container">
+    <ContainerDiv>
       <HeroTitulo>
         As melhores vagas para tecnologia, design e artes visuais.
       </HeroTitulo>
-    </div>
+    </ContainerDiv>
   </FormularioHero>
 )
 
